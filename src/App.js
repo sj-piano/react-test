@@ -105,7 +105,7 @@ let App = () => {
     for (let i=0; i < totalAssetsX; i++) {
       let assetId = i;
       let x = {};
-      let assetInfo = await contract.assets(0);
+      let assetInfo = await contract.assets(assetId);
       //log({assetInfo});
       let {creator, assetName, totalShares, sharePrice} = assetInfo;
       totalShares = totalShares.toString();
